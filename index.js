@@ -19,7 +19,7 @@ mongoose.connect(process.env.dbURL)
 app
     .use(express.json())
     
-    .use( express.static(__dirname + '/public'))
+    .use( express.static(__dirname + '/client/build'))
 
     .get('/', (req, res) => res.sendFile(path.join(__dirname, '/public', 'index.html')))
 

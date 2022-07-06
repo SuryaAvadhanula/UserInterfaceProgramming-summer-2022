@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d47d12b.css",
+    "main.js": "/static/js/main.6aa7df0e.js",
+    "static/media/friendsbg.jpg": "/static/media/friendsbg.dbf561bd48785e3dea1e.jpg",
+    "static/media/Register.gif": "/static/media/Register.93a7437cacc2e00bebca.gif",
+    "static/media/Login.gif": "/static/media/Login.72cc26caa545c17c8442.gif",
+    "static/media/Friends-logo.png": "/static/media/Friends-logo.fac93b3f7652434ff00d.png",
+    "static/media/nybg.jpg": "/static/media/nybg.e21b4748ecc3c4d38580.jpg",
+    "static/media/postsBg.jpg": "/static/media/postsBg.40a49aacbaf0d32a7334.jpg",
+    "static/media/gabrwffr-webfont.woff": "/static/media/gabrwffr-webfont.dd2164bdfff8a7e2aeae.woff",
+    "static/media/howudoin.png": "/static/media/howudoin.93489731afb5cd8334be.png",
+    "index.html": "/index.html",
+    "main.0d47d12b.css.map": "/static/css/main.0d47d12b.css.map",
+    "main.6aa7df0e.js.map": "/static/js/main.6aa7df0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d47d12b.css",
+    "static/js/main.6aa7df0e.js"
+  ]
+}
