@@ -1,5 +1,4 @@
 // 1. import mongoose
-const { Logger } = require("concurrently");
 const mongoose = require("mongoose");
 
 // 2. create schema for entity
