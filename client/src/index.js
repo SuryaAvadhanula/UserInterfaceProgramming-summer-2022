@@ -12,16 +12,19 @@ import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile';
 import Posts from './components/Posts'
+import { UserProvider } from './context/userContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-      <Routes>  
+  <UserProvider>
+    <BrowserRouter>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profilepage" element={<Profile />} />
         <Route path="/userposts" element={<Posts />} />
       </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
+  </UserProvider>
 );

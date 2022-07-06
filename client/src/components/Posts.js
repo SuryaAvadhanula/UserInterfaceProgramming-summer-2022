@@ -1,6 +1,6 @@
 import { fetchData } from "../main";
 import { useState, useEffect } from "react";
-import ProfileNav from "./ProfileNav";
+import NavBar from "../components/Navbar";
 import "../styles/posts.css";
 import userLogo from "../assets/howudoin.png";
 import postsBg from "../assets/postsBg.jpg";
@@ -53,9 +53,6 @@ const Posts = () => {
       .then((data) => {
         if (!data.message) {
           console.log(data);
-          var postArray = [];
-          for (var i in data) postArray.push([i, data[i]]);
-          setPost(postArray);
         }
       })
       .catch((error) => {
@@ -65,7 +62,7 @@ const Posts = () => {
     }
   return (
     <div>
-      <ProfileNav />
+      <NavBar />
       <div className="postsBG">
         <img src={postsBg} alt="BG"></img>
       </div>

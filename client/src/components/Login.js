@@ -6,13 +6,16 @@ import NavBar from "../components/Navbar";
 import { fetchData } from "../main";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import UserContext from "../context/userContext.js";
 
 const Login = () => {
   const [errorNotify , setErrorNotify] = useState({
     message : ''
   })
   const navigate = useNavigate();
-
+  const {userStatus, updateUser} = useContext(UserContext);
+  console.log(userStatus)
   const [user, setUser] = useState({
     username: '',
     password: '',
@@ -36,6 +39,10 @@ const Login = () => {
         console.log(data._doc.username)
         localStorage.setItem('userid', data._doc._id)
         localStorage.setItem('username', data._doc.username)
+        //updateUser("username", data._doc.username)
+        //updateUser("userid", data._doc._id)
+        updateUser("authenticated", true)
+        console.log(userStatus)
         navigate("/profilepage")
       }
     })  

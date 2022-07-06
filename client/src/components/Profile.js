@@ -1,4 +1,4 @@
-import ProfileNav from "./ProfileNav";
+import NavBar from "../components/Navbar";
 import { fetchData } from "../main";
 import { useState } from "react";
 import "../styles/profilePage.css";
@@ -47,7 +47,7 @@ const Profile = () => {
   
   return (
     <div>
-      <ProfileNav />
+      <NavBar />
       <h1 className="myFont text--center profileInfo">Welcome {username}</h1>
       <div className="container">
         <div className="wrapper">
