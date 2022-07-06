@@ -21,7 +21,7 @@ app
     
     .use( express.static(__dirname + '/client/build'))
 
-    .get('/', (req, res) => res.sendFile(path.join(__dirname, '/public', 'index.html')))
+    .get('/', (req, res) => res.sendFile(path.join(__dirname, '/client/build', 'index.html')))
 
     .use(function(req, res, next) {
         res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
